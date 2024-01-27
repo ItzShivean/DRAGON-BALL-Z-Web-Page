@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.back{
+    transform: translateZ(-40px) scale(5);
+}
+
+.front{
+    transform: translateZ(-10px) scale(2);
+}
+
+.back, .front{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.front{
+    width: 1000px;
+    height: 665px;
+}
+#lg{
+    position:absolute;
+    bottom: 10px;
+    right: 110px;
+    height: 30px;
+    width:30px;
+}
+#insta{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(181, 181, 181, 0);
+}
+#insta:hover{
+    font-weight: 600;
+    color:white
+}
+#hd{
+    text-shadow: 3px 3px 2px white;
+    position: absolute;
+    top:150px;
+    left:50px;
+    color: black;
+    font-size: 7rem;
+}
+
+#hd2{
+    text-shadow: 3px 3px 2px white;
+    position: absolute;
+    top:150px;
+    right:200px;
+    color: black;
+    font-size: 7rem;
+}
+
+#hd3{
+    text-shadow: 3px 3px 2px white;
+    position: absolute;
+    top:150px;
+    right:100px;
+    color: black;
+    font-size: 7rem;
+}
+
+section{
+    background-color: rgb(45,45,45);
+    color:white;
+    padding: 5rem 0;
+}
+
+.hh1{
+    font-size: 8rem;
+    padding: 0 10rem;
+}
+.bg1{
+    background-image: url(vegeta1.png);
+}
+.bg2{
+    background-image: url(goku1.png);
+}
+.bg3{
+    background-image: url(piccollo1.png);
+}
+.bg4{
+    background-image: url(beerus1.png);
+}
+.bg5{
+    background-image: url(trunks.png);
+}
+.bg6{
+    background-image: url(gohan1.png);
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500;
+    background-size: cover;
+}
+.mm{
+    font-size: 10rem ;
+    padding: 150px;
+    text-shadow: 4px 4px 2px black;
+}
+.nn{
+    font-size: larger;
+    text-shadow: 2px 2px 2px black;
+    padding: 2rem;
+}
